@@ -1,7 +1,7 @@
 galaxy_info:
   author: Jonathan Fox
   description: Simple role to install MSSQL Tools on Linux Red hat only for now.
-  company: FoxCo
+  company: 
 
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
@@ -19,15 +19,14 @@ galaxy_info:
   min_ansible_version: 1.2
 
   platforms:
-  - name: RedHat
+  - name: EL
     versions:
-    - all
-    - 7
-
+    - 7 
 
   galaxy_tags:
     - mssql
     - linux
     - sqlcmd
+    - database
 
 dependencies: []
