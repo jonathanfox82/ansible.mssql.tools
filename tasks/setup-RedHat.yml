@@ -1,0 +1,13 @@
+---
+# tasks file for mssql-tools
+- name: Add repository
+  get_url:
+    url: https://packages.microsoft.com/config/rhel/7/prod.repo
+    dest: /etc/yum.repos.d/msprod.repo
+
+- name: Install MSSQL Tools
+  shell: 'ACCEPT_EULA=Y yum install mssql-tools unixODBC-devel -y'
+
+- name: Add to PATH
+  shell: "echo export PATH=$PATH:/opt/mssql-tools/bin >> /etc/profile"
+  ignore_errors: true
