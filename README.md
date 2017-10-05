@@ -75,7 +75,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: mssql-tools }
+         - { role: jonathanfox82.mssql.tools }
 
 License
 -------
